@@ -19,7 +19,7 @@
   "homepage": "https://github.com/FSpitzock/Knights_Quest_Week_2_Capstone#readme",
   "dependencies": {
     "dotenv": "^17.2.3",
-    "inquirer": "^13.2.0",
+    "inquirer": "^8.2.7",
     "pg": "^8.17.1"
   }
 }
