@@ -109,21 +109,8 @@ SELECT * FROM quest_assignments;
 
 5. Project Structure
 
-knights-quest/
-│
-├── db/
-│   ├── schema.sql        # Tables
-│   └── seeds.sql         # Sample data
-│
-├── src/
-│   ├── db.js             # DB connection
-│   ├── queries.js        # SQL queries
-│   └── cli.js            # Inquirer prompts
-│
-├── .env                  # DB credentials
-├── .gitignore
-├── package.json
-└── README.md
+![alt text](image.png)
+
 
 6. Tips & Troubleshooting
 
