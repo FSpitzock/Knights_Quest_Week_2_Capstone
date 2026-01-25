@@ -7,7 +7,10 @@ const listRealms = `
 
 // Fetch characters for a specific realm
 const charactersByRealm = `
-   
+  SELECT id, name, role
+  FROM characters
+  WHERE realm_id = $1
+  ORDER BY name
 `;
 
 // List all items

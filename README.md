@@ -18,12 +18,14 @@ Table of Contents
 5. Project Structure
 6. Tips & Troubleshooting
 
+-----------------------------------------------------
+
 
 1. Setup
 
 Clone the project:
 
-git clone <your-repo-url>
+git clone (your-repo-url)
 cd knights-quest
 
 
@@ -106,6 +108,8 @@ Check the database to confirm:
 
 SELECT * FROM quests;
 SELECT * FROM quest_assignments;
+
+![alt text](image-1.png)
 
 5. Project Structure
 

@@ -42,7 +42,7 @@ async function start() {
       {
         name: 'assignedItems',
         type: 'checkbox',
-        message: `Select items for ${char.name} (optional):`,
+        message: `Assign items for ${char.name} (optional):`,
         choices: items.map(i => ({ name: `${i.name} (${i.type}, power: ${i.power})`, value: i.id })),
       },
     ]);
