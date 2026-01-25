@@ -19,7 +19,6 @@ Table of Contents
 6. Tips & Troubleshooting
 
 
-
 1. Setup
 
 Clone the project:
@@ -42,7 +41,7 @@ DB_NAME=knights_quest
 DB_PASSWORD=(Your password here)
 DB_PORT=5432
 
-    Make sure these match your Postgres setup.
+(Make sure these match your Postgres setup.)
 
 2. Database Setup
 Step 1 — Create the database
@@ -68,13 +67,11 @@ Inside psql:
 \dt          -- List tables
 SELECT * FROM realms;
 
-    Screenshot idea: Show the table output in your README.
-
 3. Running the CLI
 
 Start the game:
 
-node src/cli.js
+Run - node src/cli.js in your terminal
 
 You’ll see something like:
 
@@ -93,8 +90,6 @@ Follow the prompts:
 
     Confirm creation
 
-    Screenshot idea: Show selecting a realm, characters, and entering a quest title.
-
 4. Example Workflow
 
 ⚔️ Welcome to Knights Quest ⚔️
@@ -111,8 +106,6 @@ Check the database to confirm:
 
 SELECT * FROM quests;
 SELECT * FROM quest_assignments;
-
-    Screenshot idea: Show the new quest in quests and the assignments in quest_assignments.
 
 5. Project Structure
 
@@ -134,27 +127,27 @@ knights-quest/
 
 6. Tips & Troubleshooting
 
-    TypeError: prompt is not a function → Make sure Inquirer is v8:
+TypeError: prompt is not a function → Make sure Inquirer is v8:
 
-npm uninstall inquirer
-npm install inquirer@8
+    npm uninstall inquirer
+    npm install inquirer@8
 
-    Database connection issues → Check .env credentials:
+Database connection issues → Check .env credentials:
 
-DB_USER=postgres
-DB_PASSWORD=root
-DB_NAME=knights_quest
-DB_HOST=localhost
-DB_PORT=5432
+    DB_USER=postgres
+    DB_PASSWORD=root
+    DB_NAME=knights_quest
+    DB_HOST=localhost
+    DB_PORT=5432
 
-    psql cannot connect → Make sure the database exists:
+psql cannot connect → Make sure the database exists:
 
-CREATE DATABASE knights_quest;
+    CREATE DATABASE knights_quest;
 
-    Always restart Node after editing .env:
+        Always restart Node after editing .env:
 
-Ctrl + C
-node src/cli.js
+            Ctrl + C
+            node src/cli.js
 
     Use \dt in psql to check that tables exist
 
